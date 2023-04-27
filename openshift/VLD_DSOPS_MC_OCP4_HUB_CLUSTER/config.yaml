@@ -143,13 +143,13 @@ infra_workloads:
 #- ocp4_workload_authentication
 - ocp4_workload_le_certificates
 - ocp4_workload_rhacs
-- ocp4_workload_openshift_data_foundation
+#- ocp4_workload_openshift_data_foundation
 - ocp4_workload_rhacm
 - ocp4_workload_gitea_operator
 - ocp4_workload_pipelines
 - ocp4_workload_openshift_gitops
 - ocp4_workload_codeserver
-- ocp4_workload_acm_multicluster_observability
+#- ocp4_workload_acm_multicluster_observability
 
 # -------------------------------------------------------------------
 # Workload: ocp4_workload_authentication
