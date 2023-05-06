@@ -55,14 +55,17 @@ student_name: lab-user
 # --- Student is allowed to sudo and switch to root
 student_sudo: true
 
+ocp_username: cluster-admin
+
 # -------------------------------------------------------------------
 # Infra Workloads
 # -------------------------------------------------------------------
 infra_workloads:
-- ocp4_workload_authentication
+- ocp4_workload_le_certificates
+- ocp4_workload_generate_kubeconfig
+- ocp4_workload_rosa_authentication
 - ocp4_workload_opentlc_production
 - ocp4_workload_project_request_template_rosa_aro
-#- ocp4_workload_le_certificates
 - ocp4_workload_pipelines
 - ocp-workload-etherpad
 - ocp4_workload_nexus_operator
