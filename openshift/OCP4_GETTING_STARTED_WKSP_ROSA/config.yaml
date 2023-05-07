@@ -136,38 +136,3 @@ gogs_project: labs
 etherpad_project: labs
 project_name: labs
 workshop_type: starter
-
-# ---------------------------------------------------------
-# AgnosticV Metadata
-# ---------------------------------------------------------
-
-agnosticv_meta:
-  idle_after_deploy: 4
-  idle_after_start: 4
-  deploy_with: babylon
-
-# ---------------------------------------------------------
-# Babylon meta variables #
-# ---------------------------------------------------------
-
-__meta__:
-  aws_sandboxed: true
-  anarchy:
-    namespace: babylon-anarchy-ocp-wksp
-  deployer:
-    virtualenv: ansible2.9-python3.6-2021-11-30
-  catalog:
-    multiuser: true
-    namespace: babylon-catalog-{{ stage | default('?') }}
-    display_name: OCP4 Getting Started Workshop
-    category: Workshops
-    keywords:
-    - workshop
-    - openshift
-    - ocp
-    - ocp412
-    labels:
-      Product: Red_Hat_OpenShift_Container_Platform
-      Product_Family: Red_Hat_Cloud
-      Provider: Hybrid_Cloud_Experience
-    parameters: []
