@@ -84,6 +84,7 @@ student_workloads: []
 ocp4_workload_rosa_authentication_htpasswd_user_base: user
 # When no password specified it is generated
 ocp4_workload_rosa_authentication_htpasswd_user_password: openshift
+ocp4_workload_authentication_htpasswd_user_password: "{{ ocp4_workload_rosa_authentication_htpasswd_user_password }}"
 
 # -------------------------------------------------------------------
 # OpenTLC Production
