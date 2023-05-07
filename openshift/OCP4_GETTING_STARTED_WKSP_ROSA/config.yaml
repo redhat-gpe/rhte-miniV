@@ -62,7 +62,7 @@ ocp_username: cluster-admin
 # -------------------------------------------------------------------
 infra_workloads:
 - ocp4_workload_generate_kubeconfig
-- ocp4_workload_rosa_authentication
+- ocp4_workload_authentication_managed_ocp
 - ocp4_workload_opentlc_production
 - ocp4_workload_project_request_template_rosa_aro
 - ocp4_workload_pipelines
@@ -81,10 +81,10 @@ student_workloads: []
 # -------------------------------------------------------------------
 # Authentication
 # -------------------------------------------------------------------
-ocp4_workload_rosa_authentication_htpasswd_user_base: user
+ocp4_workload_authentication_managed_ocp_htpasswd_user_base: user
 # When no password specified it is generated
-ocp4_workload_rosa_authentication_htpasswd_user_password: openshift
-ocp4_workload_authentication_htpasswd_user_password: "{{ ocp4_workload_rosa_authentication_htpasswd_user_password }}"
+ocp4_workload_authentication_managed_ocp_htpasswd_user_password: openshift
+ocp4_workload_authentication_htpasswd_user_password: "{{ ocp4_workload_authentication_managed_ocp_htpasswd_user_password }}"
 
 # -------------------------------------------------------------------
 # OpenTLC Production
