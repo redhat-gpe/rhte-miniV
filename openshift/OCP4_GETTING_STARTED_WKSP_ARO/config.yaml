@@ -93,7 +93,7 @@ ocp4_workload_authentication_htpasswd_user_password: openshift
 ocp4_workload_authentication_htpasswd_user_count: "{{ (num_users | default('2')) | int }}"
 
 # Remove the standard kubeadmin user
-ocp4_workload_authentication_remove_kubeadmin: true
+ocp4_workload_authentication_remove_kubeadmin: false
 
 # -------------------------------------------------------------------
 # OpenTLC Production
