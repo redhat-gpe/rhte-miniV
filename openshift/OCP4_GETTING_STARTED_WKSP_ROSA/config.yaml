@@ -24,8 +24,6 @@ platform: RHPDS
 env_type: ocp4-cluster
 software_to_deploy: openshift4
 
-cloud_provider: ec2
-ansible_user: runner
 # -------------------------------------------------------------------
 # End Mandatory Variables
 # -------------------------------------------------------------------
@@ -65,7 +63,6 @@ ocp_username: cluster-admin
 # -------------------------------------------------------------------
 infra_workloads:
 - ocp4_workload_generate_kubeconfig
-- ocp4_workload_le_certificates
 - ocp4_workload_authentication_managed_ocp
 - ocp4_workload_opentlc_production
 - ocp4_workload_project_request_template_rosa_aro
