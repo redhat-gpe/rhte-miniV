@@ -25,7 +25,7 @@ env_type: ocp4-cluster
 software_to_deploy: openshift4
 
 cloud_provider: ec2
-ansible_user: runner
+ansible_user: root
 # -------------------------------------------------------------------
 # End Mandatory Variables
 # -------------------------------------------------------------------
