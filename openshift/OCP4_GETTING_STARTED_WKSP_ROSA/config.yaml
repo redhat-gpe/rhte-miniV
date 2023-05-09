@@ -82,7 +82,6 @@ student_workloads: []
 # -------------------------------------------------------------------
 # Authentication
 # -------------------------------------------------------------------
-ocp4_workload_authentication_managed_ocp_idm_type: htpasswd
 ocp4_workload_authentication_managed_ocp_htpasswd_user_base: user
 # When no password specified it is generated
 ocp4_workload_authentication_managed_ocp_htpasswd_user_password: openshift
