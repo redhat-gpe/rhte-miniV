@@ -3,7 +3,6 @@ ocp_username: cluster-admin
 
 infra_workloads:
 - ocp4-workload-workshop-admin-storage
-- studentvm_ocp4
 - ocp4_workload_pipelines
 - ocp4_workload_rhacs
 - ocp4_workload_rhacm
