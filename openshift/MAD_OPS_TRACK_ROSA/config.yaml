@@ -6,7 +6,6 @@ infra_workloads:
 - ocp4_workload_pipelines
 - ocp4_workload_rhacs
 - ocp4_workload_rhacm
-- ocp4_workload_le_certificates
 
 # -------------------------------------------------------------------
 # Workload: ocp4_workload_authentication
