@@ -1,5 +1,5 @@
 ---
-ocp_username: cluster-admin
+ocp_username: kubeadmin
 
 infra_workloads:
 - ocp4-workload-workshop-admin-storage
