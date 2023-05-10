@@ -1,6 +1,4 @@
 ---
-ocp_username: kubeadmin
-
 infra_workloads:
 - ocp4_workload_authentication
 - ocp4-workload-workshop-admin-storage
@@ -61,3 +59,5 @@ ocp4_workload_pipelines_use_catalog_snapshot: false
 # -------------------------------------------------------------------
 WORKSHOP_FILE: workshop-appmod.yaml
 HOMEROOM_IMAGE: ocp4-prod
+ocp_username: "{{ ocp4_workload_authentication_admin_user }}"
+ocp_password: "{{ ocp4_workload_authentication_htpasswd_admin_password }}"
