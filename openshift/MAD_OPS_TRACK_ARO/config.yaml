@@ -2,6 +2,7 @@
 ocp_username: kubeadmin
 
 infra_workloads:
+- ocp4_workload_authentication
 - ocp4-workload-workshop-admin-storage
 - ocp4_workload_pipelines
 - ocp4_workload_rhacs
@@ -11,6 +12,23 @@ infra_workloads:
 # Common Password
 # -------------------------------------------------------------------
 common_password: "{{ (guid[:5] | hash('md5') | int(base=16) | b64encode)[:8] }}"
+
+# -------------------------------------------------------------------
+# Authentication
+# -------------------------------------------------------------------
+ocp4_workload_authentication_idm_type: htpasswd
+ocp4_workload_authentication_admin_user: opentlc-mgr
+# When no password specified it is generated
+ocp4_workload_authentication_htpasswd_admin_password: r3dh4t1!
+ocp4_workload_authentication_htpasswd_user_base: user
+# When no password specified it is generated
+ocp4_workload_authentication_htpasswd_user_password: openshift
+
+# Create 'user_count' student users
+ocp4_workload_authentication_htpasswd_user_count: 0
+
+# Remove the standard kubeadmin user
+ocp4_workload_authentication_remove_kubeadmin: false
 
 # -------------------------------------------------------------------
 # Workload: ocp4_workload_rhacm
