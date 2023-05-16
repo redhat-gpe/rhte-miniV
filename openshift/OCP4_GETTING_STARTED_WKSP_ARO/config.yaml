@@ -148,7 +148,7 @@ repositories:
     name: nationalparks
   - base: https://github.com/openshift-roadshow
     name: nationalparks-py
-  - base: https://github.com/openshift-roadshow
+  - base: https://github.com/treddy08
     name: nationalparks-dotnet
   - base: https://github.com/openshift-roadshow
     name: nationalparks-js
