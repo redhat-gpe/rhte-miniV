@@ -62,7 +62,6 @@ ocp_username: cluster-admin
 # Infra Workloads
 # -------------------------------------------------------------------
 infra_workloads:
-- ocp4_workload_generate_kubeconfig
 - ocp4_workload_authentication_rosa
 - ocp4_workload_opentlc_production
 - ocp4_workload_project_request_template_rosa_aro
