@@ -68,6 +68,7 @@ infra_workloads:
 - ocp4_workload_project_request_template_rosa_aro
 - ocp4_workload_pipelines
 - ocp4_workload_rhods_self_managed
+- ocp4_workload_web_terminal
 
 # -------------------------------------------------------------------
 # Student Workloads ([] means no student workloads)
@@ -123,3 +124,21 @@ ocp4_workload_aiml_namespace: "{{ rhods_username }}-rhods-project"
 ocp4_workload_gitea_aiml_user: lab-user
 retail_rhods_project_gitea_password: b3BlbnNoaWZ0
 retail_rhods_project_gitea_username: bGFiLXVzZXI=
+
+# ------------------------------------------------
+# Web Terminal Operator
+# ------------------------------------------------
+
+ocp4_workload_web_terminal_operator_channel: "fast"
+ocp4_workload_web_terminal_operator_automatic_install_plan_approval: true
+ocp4_workload_web_terminal_operator_starting_csv: ""
+ocp4_workload_web_terminal_operator_wait_for_deploy: true
+ocp4_workload_web_terminal_operator_name: web-terminal
+ocp4_workload_web_terminal_operator_csv_prefix: web-terminal
+ocp4_workload_web_terminal_operator_catalog_source: redhat-operators
+ocp4_workload_web_terminal_operator_deployment: web-terminal-controller
+ocp4_workload_web_terminal_operator_namespace: openshift-operators
+ocp4_workload_web_terminal_operator_use_catalog_snapshot: false
+ocp4_workload_web_terminal_operator_catalogsource_name: redhat-operators-snapshot-amq-streams
+ocp4_workload_web_terminal_operator_catalog_snapshot_image: quay.io/gpte-devops-automation/olm_snapshot_redhat_catalog
+ocp4_workload_web_terminal_operator_catalog_snapshot_image_tag: "v4.13_2023_07_17"
