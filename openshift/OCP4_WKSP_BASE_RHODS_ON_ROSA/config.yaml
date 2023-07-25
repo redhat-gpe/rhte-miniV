@@ -177,7 +177,7 @@ ocp4_workload_gitea_operator_create_users: true
 ocp4_workload_gitea_operator_user_number: 1
 ocp4_workload_gitea_operator_generate_user_format: lab-user
 ocp4_workload_gitea_operator_user_password: openshift
-ocp4_workload_gitea_operator_migrate_repositories: true
+ocp4_workload_gitea_operator_migrate_repositories: false
 ocp4_workload_gitea_operator_repositories_list:
 - repo: https://github.com/Enterprise-Neurosystem/edge-anomaly-detection.git
   name: edge-anomaly-detection
