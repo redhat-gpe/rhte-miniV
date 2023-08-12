@@ -60,7 +60,7 @@ student_sudo: true
 # -------------------------------------------------------------------
 infra_workloads:
 - ocp4_workload_generate_kubeconfig
-- ocp4_workload_authentication_rosa
+- ocp4_workload_authentication
 - ocp4_workload_opentlc_production
 - ocp4_workload_project_request_template_rosa_aro
 - ocp4_workload_pipelines
@@ -74,10 +74,19 @@ student_workloads: []
 # -------------------------------------------------------------------
 # Authentication
 # -------------------------------------------------------------------
-ocp4_workload_authentication_rosa_user_base: user
+ocp4_workload_authentication_idm_type: htpasswd
+ocp4_workload_authentication_admin_user: opentlc-mgr
 # When no password specified it is generated
-ocp4_workload_authentication_rosa_user_password: Openshift@1
-ocp4_workload_authentication_rosa_admin_password: Openshift@1
+ocp4_workload_authentication_htpasswd_admin_password: r3dh4t1!
+ocp4_workload_authentication_htpasswd_user_base: user
+# When no password specified it is generated
+ocp4_workload_authentication_htpasswd_user_password: openshift
+
+# Create 'user_count' student users
+ocp4_workload_authentication_htpasswd_user_count: "{{ (num_users | default('2')) | int }}"
+
+# Remove the standard kubeadmin user
+ocp4_workload_authentication_remove_kubeadmin: false
 
 # -------------------------------------------------------------------
 # OpenTLC Production
